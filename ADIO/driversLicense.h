@@ -6,6 +6,31 @@
 using namespace std;
 
 class driversLicense {
+private:
+	string surname;
+	string name;
+	string middleName;
+	time_t dateOfBirth;
+
+	time_t dateOfIssue;
+	time_t expirationDate;
+
+	string issuedBy;
+	unsigned short int serial;
+	unsigned int number;
+	string placeOfRegistration;
+
+	// Photo human
+	// Photo signature
+
+	unsigned short int lengthArrCar;
+	string* arrCar;
+	time_t* arrCarDateOfIssue;
+	time_t* arrCarExpirationDate;
+	string* limitations;
+
+	// Photo barcode
+
 public:
 	driversLicense(string _surname, string _name, string _middleName,
 		time_t _dateOfBirth, time_t _dateOfIssue, time_t _expirationDate,
@@ -59,29 +84,4 @@ public:
 	void setPhotoBarcode();
 	// getPhotoBarcode
 	//
-
-private:
-	string surname;
-	string name;
-	string middleName;
-	time_t dateOfBirth;
-
-	time_t dateOfIssue;
-	time_t expirationDate;
-
-	string issuedBy;
-	unsigned short int serial;
-	unsigned int number;
-	string placeOfRegistration;
-
-	// Photo human
-	// Photo signature
-
-	unsigned short int lengthArrCar;
-	string* arrCar;
-	time_t* arrCarDateOfIssue;
-	time_t* arrCarExpirationDate;
-	string* limitations;
-
-	// Photo barcode
 };
