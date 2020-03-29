@@ -23,9 +23,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main_doc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="driversLicense.h">
       <Filter>Header Files</Filter>
     </ClInclude>
