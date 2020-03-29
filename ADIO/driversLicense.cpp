@@ -104,3 +104,72 @@ unsigned int driversLicense::getNumber()
 void driversLicense::setPlaceOfRegistation(string _placeOfRegistration) {
 	placeOfRegistration = _placeOfRegistration;
 }
+
+string driversLicense::getPlaceOfRegistation()
+{
+	return placeOfRegistration;
+}
+
+void driversLicense::setPhotoHuman() {
+	return;
+}
+
+void driversLicense::setPhotoSignature() {
+	return;
+}
+
+void driversLicense::setLengthArrCar(unsigned short int _lengthArrCar) {
+	lengthArrCar = _lengthArrCar;
+	arrCar = new string[_lengthArrCar];
+	arrCarDateOfIssue = new time_t[_lengthArrCar];
+	arrCarExpirationDate = new time_t[_lengthArrCar];
+	limitations = new string[_lengthArrCar];
+}
+
+unsigned short int driversLicense::getLengthArrCar() {
+	return lengthArrCar;
+}
+
+void driversLicense::setArrCar(string* _arrCar) {
+	for (int i = 0; i < lengthArrCar; i++)
+		arrCar[i] = _arrCar[i];
+}
+
+void driversLicense::setArrCarDateOfIssue(time_t* _arrCarDateOfIssue) {
+	for (int i = 0; i < lengthArrCar; i++)
+		arrCarDateOfIssue[i] = _arrCarDateOfIssue[i];
+}
+
+void driversLicense::setArrCarExpirationDate(time_t* _arrCarExpirationDate) {
+	for (int i = 0; i < lengthArrCar; i++)
+		arrCarExpirationDate[i] = _arrCarExpirationDate[i];
+}
+
+void driversLicense::setLimitations(string* _limitations) {
+	for (int i = 0; i < lengthArrCar; i++)
+		limitations[i] = _limitations[i];
+}
+
+string* driversLicense::getArrCar()
+{
+	return arrCar;
+}
+
+time_t* driversLicense::getArrCarDateOfIssue()
+{
+	return arrCarDateOfIssue;
+}
+
+time_t* driversLicense::getArrCarExpirationDate()
+{
+	return arrCarExpirationDate;
+}
+
+string* driversLicense::getLimitations()
+{
+	return limitations;
+}
+
+void driversLicense::setPhotoBarcode() {
+	return;
+}

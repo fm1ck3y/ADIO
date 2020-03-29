@@ -12,7 +12,7 @@ public:
 		string _issuedBy, unsigned short int _serial, unsigned int _number, string _placeOfRegistration,
 		/* Photo human, */ /* Photo signature, */
 		unsigned short int _lengthArrCar, string* _arrCar, time_t* _arrCarDateOfIssue,
-		time_t* _arrCarExpirationDate, string* limitation /*, Photo barcord*/);
+		time_t* _arrCarExpirationDate, string* limitations /*, Photo barcord*/);
 
 	void setFio(string _surname, string _name, string _middleName);
 	string getFio();
@@ -33,6 +33,33 @@ public:
 	unsigned int getNumber();
 
 	void setPlaceOfRegistation(string _placeOfRegistration);
+	string getPlaceOfRegistation();
+
+	//
+	void setPhotoHuman();
+	void setPhotoSignature();
+	// getPhotoHuman();
+	// getPhotoSignature();
+	//
+
+	void setLengthArrCar(unsigned short int _lengthArrCar);
+	unsigned short int getLengthArrCar();
+
+	void setArrCar(string* _arrCar);
+	void setArrCarDateOfIssue(time_t* _arrCarDateOfIssue);
+	void setArrCarExpirationDate(time_t* _arrCarExpirationDate);
+	void setLimitations(string* _limitations);
+
+	string* getArrCar();
+	time_t* getArrCarDateOfIssue();
+	time_t* getArrCarExpirationDate();
+	string* getLimitations();
+
+	//
+	void setPhotoBarcode();
+	// getPhotoBarcode
+	//
+
 private:
 	string surname;
 	string name;
