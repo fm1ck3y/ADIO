@@ -1,10 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <ctime>
 
 using namespace std;
-
 
 class PlaceOfResidence{
 	private:
@@ -14,14 +12,7 @@ class PlaceOfResidence{
 		int houseNumber;
 		int apartmentNumber;
 	public:
-		PlaceOfResidence(string _country,string _city,string _street,int _houseNumber,int _apartmentNumber)
-		{
-			country = _country;
-			city = _city;
-			street = _street;
-			houseNumber = _houseNumber;
-			apartmentNumber = _apartmentNumber;
-		}
+		PlaceOfResidence(string _country,string _city,string _street,int _houseNumber,int _apartmentNumber);
 
 		void setCountry(string _country);
 		void setCity(string _city);
