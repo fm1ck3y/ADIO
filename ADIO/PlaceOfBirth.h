@@ -10,11 +10,7 @@ class PlaceOfBirth{
 		string city;
 		string region;
 	public:
-		PlaceOfBirth(string _city, string _region)
-		{
-			city = _city;
-			region = _region;
-		}
+		PlaceOfBirth(string _city, string _region);
 
 		void setCity(string _city);
 		void setRegion(string _region);
